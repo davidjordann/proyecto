@@ -4,11 +4,14 @@ import co.edu.uceva.countryservice.model.entities.Pais;
 import co.edu.uceva.countryservice.model.service.PaisServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController("/api/v1/country-service")
+
+@RestController
+@RequestMapping("/api/v1/country-service")
 public class CountryRestController {
 
     @Autowired
